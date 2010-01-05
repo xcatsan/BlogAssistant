@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224339570A6F05F3000348D4 /* WebKit.framework */; };
+		4CC455F510E2E35100311A67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC455F410E2E35100311A67 /* MainMenu.xib */; };
+		4CC455F610E2E36000311A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC455F010E2E2D500311A67 /* main.m */; };
+		4CC4563210E3650100311A67 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562710E364FE00311A67 /* CustomCell.m */; };
+		4CC4563310E3650100311A67 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562910E364FE00311A67 /* CustomTableView.m */; };
+		4CC4563410E3650100311A67 /* CustomCellControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562B10E364FE00311A67 /* CustomCellControl.m */; };
+		4CC4563510E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
+		4CC4563610E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
+		4CC4563710E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
+		4CC4563810E3650100311A67 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562710E364FE00311A67 /* CustomCell.m */; };
+		4CC4563910E3650100311A67 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562910E364FE00311A67 /* CustomTableView.m */; };
+		4CC4563A10E3650100311A67 /* CustomCellControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562B10E364FE00311A67 /* CustomCellControl.m */; };
+		4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
+		4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
+		4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
+		4CC4564410E3653000311A67 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564310E3653000311A67 /* ImageTransformer.m */; };
+		4CC4564510E3653000311A67 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564310E3653000311A67 /* ImageTransformer.m */; };
+		4CC4564A10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
+		4CC4564B10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
+		4CC4566810E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
+		4CC4566910E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
+		4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4566C10E365CA00311A67 /* ViewerController.m */; };
+		4CC4566E10E365CA00311A67 /* ViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4566C10E365CA00311A67 /* ViewerController.m */; };
+		4CC4567410E3666800311A67 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4567310E3666800311A67 /* Viewer.xib */; };
+		4CC4567510E3666800311A67 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4567310E3666800311A67 /* Viewer.xib */; };
+		4CC4568910E3689F00311A67 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* ModelController.m */; };
+		4CC4568A10E3689F00311A67 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* ModelController.m */; };
+		4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
+		4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
+		4CC456CC10E4387200311A67 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
+		4CC456CD10E4387200311A67 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
+		4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
+		4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
+		8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BlogAssistantView.m */; settings = {ATTRIBUTES = (); }; };
+		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0259C576FE90428111CA0C5A /* BlogAssistantView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BlogAssistantView.m; sourceTree = "<group>"; };
+		0259C57AFE90428111CA0C5A /* BlogAssistantView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BlogAssistantView.h; sourceTree = "<group>"; };
+		224339570A6F05F3000348D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		32DBCF980370C29C00C91783 /* BlogAssistant_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogAssistant_Prefix.pch; sourceTree = "<group>"; };
+		4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlogAssistant Test App.webplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogAssistant Test App-Info.plist"; sourceTree = "<group>"; };
+		4CC455F010E2E2D500311A67 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CC455F410E2E35100311A67 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		4CC4562610E364FE00311A67 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		4CC4562710E364FE00311A67 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		4CC4562810E364FE00311A67 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		4CC4562910E364FE00311A67 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		4CC4562A10E364FE00311A67 /* CustomCellControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellControl.h; sourceTree = "<group>"; };
+		4CC4562B10E364FE00311A67 /* CustomCellControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellControl.m; sourceTree = "<group>"; };
+		4CC4562C10E364FE00311A67 /* CustomCellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellButton.h; sourceTree = "<group>"; };
+		4CC4562D10E364FE00311A67 /* CustomCellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellButton.m; sourceTree = "<group>"; };
+		4CC4562E10E3650000311A67 /* CustomCellImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellImage.h; sourceTree = "<group>"; };
+		4CC4562F10E3650000311A67 /* CustomCellImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellImage.m; sourceTree = "<group>"; };
+		4CC4563010E3650100311A67 /* CustomCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLabel.h; sourceTree = "<group>"; };
+		4CC4563110E3650100311A67 /* CustomCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLabel.m; sourceTree = "<group>"; };
+		4CC4564210E3653000311A67 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
+		4CC4564310E3653000311A67 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
+		4CC4564810E3654100311A67 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		4CC4564910E3654100311A67 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
+		4CC4566710E365A200311A67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		4CC4566B10E365CA00311A67 /* ViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerController.h; sourceTree = "<group>"; };
+		4CC4566C10E365CA00311A67 /* ViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewerController.m; sourceTree = "<group>"; };
+		4CC4567310E3666800311A67 /* Viewer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Viewer.xib; sourceTree = "<group>"; };
+		4CC4568710E3689F00311A67 /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		4CC4568810E3689F00311A67 /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BlogAssistant.xcdatamodel; sourceTree = "<group>"; };
+		4CC456CA10E4387200311A67 /* TestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppController.h; sourceTree = "<group>"; };
+		4CC456CB10E4387200311A67 /* TestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppController.m; sourceTree = "<group>"; };
+		4CE550E710F0BDBE00C98B98 /* CustomCellLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLinkLabel.h; sourceTree = "<group>"; };
+		4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLinkLabel.m; sourceTree = "<group>"; };
+		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogAssistant.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC455E410E2E18900311A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC4566810E365A200311A67 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC96E0486D14A00FE50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
+				224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */,
+				4CC4566910E365A200311A67 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259C574FE90428111CA0C5A /* BlogAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4564110E3651600311A67 /* Models */,
+				4CC455EF10E2E2B900311A67 /* Test App Classes */,
+				4CC4562310E364D400311A67 /* Viewer */,
+				32DBCF9E0370C38000C91783 /* Plugin Classes */,
+				32DBCF9F0370C38200C91783 /* Other Sources */,
+				0259C582FE90428111CA0C5A /* Resources */,
+				1ED78706FE9D4A0611CA0C5A /* Products */,
+				2E58F364FFB232C311CA0CBA /* Frameworks */,
+				4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */,
+			);
+			name = BlogAssistant;
+			sourceTree = "<group>";
+		};
+		0259C582FE90428111CA0C5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9730486D14A00FE50C9 /* Info.plist */,
+				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1ED78706FE9D4A0611CA0C5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */,
+				4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E58F364FFB232C311CA0CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4566710E365A200311A67 /* CoreData.framework */,
+				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
+				224339570A6F05F3000348D4 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DBCF9E0370C38000C91783 /* Plugin Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0259C57AFE90428111CA0C5A /* BlogAssistantView.h */,
+				0259C576FE90428111CA0C5A /* BlogAssistantView.m */,
+			);
+			name = "Plugin Classes";
+			sourceTree = "<group>";
+		};
+		32DBCF9F0370C38200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF980370C29C00C91783 /* BlogAssistant_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4CC455EF10E2E2B900311A67 /* Test App Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CC455F010E2E2D500311A67 /* main.m */,
+				4CC455F410E2E35100311A67 /* MainMenu.xib */,
+				4CC456CA10E4387200311A67 /* TestAppController.h */,
+				4CC456CB10E4387200311A67 /* TestAppController.m */,
+			);
+			name = "Test App Classes";
+			sourceTree = "<group>";
+		};
+		4CC4562310E364D400311A67 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4566B10E365CA00311A67 /* ViewerController.h */,
+				4CC4566C10E365CA00311A67 /* ViewerController.m */,
+				4CC4562610E364FE00311A67 /* CustomCell.h */,
+				4CC4562710E364FE00311A67 /* CustomCell.m */,
+				4CC4562810E364FE00311A67 /* CustomTableView.h */,
+				4CC4562910E364FE00311A67 /* CustomTableView.m */,
+				4CC4562A10E364FE00311A67 /* CustomCellControl.h */,
+				4CC4562B10E364FE00311A67 /* CustomCellControl.m */,
+				4CC4562C10E364FE00311A67 /* CustomCellButton.h */,
+				4CC4562D10E364FE00311A67 /* CustomCellButton.m */,
+				4CC4562E10E3650000311A67 /* CustomCellImage.h */,
+				4CC4562F10E3650000311A67 /* CustomCellImage.m */,
+				4CC4563010E3650100311A67 /* CustomCellLabel.h */,
+				4CC4563110E3650100311A67 /* CustomCellLabel.m */,
+				4CC4567310E3666800311A67 /* Viewer.xib */,
+				4CE550E710F0BDBE00C98B98 /* CustomCellLinkLabel.h */,
+				4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */,
+			);
+			name = Viewer;
+			sourceTree = "<group>";
+		};
+		4CC4564110E3651600311A67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4564210E3653000311A67 /* ImageTransformer.h */,
+				4CC4564310E3653000311A67 /* ImageTransformer.m */,
+				4CC4564810E3654100311A67 /* Resource.h */,
+				4CC4564910E3654100311A67 /* Resource.m */,
+				4CC4568710E3689F00311A67 /* ModelController.h */,
+				4CC4568810E3689F00311A67 /* ModelController.m */,
+				4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC455E510E2E18900311A67 /* BlogAssistant Test App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant Test App" */;
+			buildPhases = (
+				4CC455E210E2E18900311A67 /* Resources */,
+				4CC455E310E2E18900311A67 /* Sources */,
+				4CC455E410E2E18900311A67 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlogAssistant Test App";
+			productName = "BlogAssistant Test App";
+			productReference = 4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */;
+			productType = "com.apple.product-type.application";
+		};
+		8D1AC9600486D14A00FE50C9 /* BlogAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant" */;
+			buildPhases = (
+				8D1AC9660486D14A00FE50C9 /* Resources */,
+				8D1AC96A0486D14A00FE50C9 /* Sources */,
+				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlogAssistant;
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = BlogAssistant;
+			productReference = 8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0259C573FE90428111CA0C5A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C027D11D08A954E7001699E2 /* Build configuration list for PBXProject "BlogAssistant" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0259C574FE90428111CA0C5A /* BlogAssistant */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1AC9600486D14A00FE50C9 /* BlogAssistant */,
+				4CC455E510E2E18900311A67 /* BlogAssistant Test App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC455E210E2E18900311A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC455F510E2E35100311A67 /* MainMenu.xib in Resources */,
+				4CC4567510E3666800311A67 /* Viewer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC9660486D14A00FE50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
+				4CC4567410E3666800311A67 /* Viewer.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC455E310E2E18900311A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC455F610E2E36000311A67 /* main.m in Sources */,
+				4CC4563210E3650100311A67 /* CustomCell.m in Sources */,
+				4CC4563310E3650100311A67 /* CustomTableView.m in Sources */,
+				4CC4563410E3650100311A67 /* CustomCellControl.m in Sources */,
+				4CC4563510E3650100311A67 /* CustomCellButton.m in Sources */,
+				4CC4563610E3650100311A67 /* CustomCellImage.m in Sources */,
+				4CC4563710E3650100311A67 /* CustomCellLabel.m in Sources */,
+				4CC4564410E3653000311A67 /* ImageTransformer.m in Sources */,
+				4CC4564A10E3654100311A67 /* Resource.m in Sources */,
+				4CC4566E10E365CA00311A67 /* ViewerController.m in Sources */,
+				4CC4568A10E3689F00311A67 /* ModelController.m in Sources */,
+				4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
+				4CC456CD10E4387200311A67 /* TestAppController.m in Sources */,
+				4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */,
+				4CC4563810E3650100311A67 /* CustomCell.m in Sources */,
+				4CC4563910E3650100311A67 /* CustomTableView.m in Sources */,
+				4CC4563A10E3650100311A67 /* CustomCellControl.m in Sources */,
+				4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */,
+				4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */,
+				4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */,
+				4CC4564510E3653000311A67 /* ImageTransformer.m in Sources */,
+				4CC4564B10E3654100311A67 /* Resource.m in Sources */,
+				4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */,
+				4CC4568910E3689F00311A67 /* ModelController.m in Sources */,
+				4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
+				4CC456CC10E4387200311A67 /* TestAppController.m in Sources */,
+				4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D1AC97B0486D23100FE50C9 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC455E910E2E18D00311A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "BlogAssistant Test App-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "BlogAssistant Test App";
+			};
+			name = Debug;
+		};
+		4CC455EA10E2E18D00311A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "BlogAssistant Test App-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "BlogAssistant Test App";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C027D11A08A954E7001699E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		C027D11B08A954E7001699E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C027D11E08A954E7001699E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BlogAssistant_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Internet Plug-Ins";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BlogAssistant;
+				SDKROOT = macosx10.5;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = webplugin;
+			};
+			name = Debug;
+		};
+		C027D11F08A954E7001699E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BlogAssistant_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Internet Plug-Ins";
+				PRODUCT_NAME = BlogAssistant;
+				SDKROOT = macosx10.5;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = webplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC455E910E2E18D00311A67 /* Debug */,
+				4CC455EA10E2E18D00311A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C027D11A08A954E7001699E2 /* Debug */,
+				C027D11B08A954E7001699E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C027D11D08A954E7001699E2 /* Build configuration list for PBXProject "BlogAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C027D11E08A954E7001699E2 /* Debug */,
+				C027D11F08A954E7001699E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0259C573FE90428111CA0C5A /* Project object */;
+}
