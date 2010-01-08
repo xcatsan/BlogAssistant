@@ -22,8 +22,6 @@
 		4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
 		4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
 		4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
-		4CC4564410E3653000311A67 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564310E3653000311A67 /* ImageTransformer.m */; };
-		4CC4564510E3653000311A67 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564310E3653000311A67 /* ImageTransformer.m */; };
 		4CC4564A10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
 		4CC4564B10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
 		4CC4566810E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
@@ -36,14 +34,29 @@
 		4CC4568A10E3689F00311A67 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* ModelController.m */; };
 		4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
 		4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
-		4CC456CC10E4387200311A67 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
-		4CC456CD10E4387200311A67 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
+		4CD4006B10F470CE0008CFE2 /* BlogAssistant.webplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */; };
+		4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */; };
+		4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5D10F4013E0008CFE2 /* PluginController.m */; };
+		4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
 		4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
 		4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
 		8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BlogAssistantView.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CD4005510F44ECD0008CFE2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/Users/hashi/Library/Internet Plug-Ins";
+			dstSubfolderSpec = 0;
+			files = (
+				4CD4006B10F470CE0008CFE2 /* BlogAssistant.webplugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0259C576FE90428111CA0C5A /* BlogAssistantView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = BlogAssistantView.m; sourceTree = "<group>"; };
@@ -66,8 +79,6 @@
 		4CC4562F10E3650000311A67 /* CustomCellImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellImage.m; sourceTree = "<group>"; };
 		4CC4563010E3650100311A67 /* CustomCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLabel.h; sourceTree = "<group>"; };
 		4CC4563110E3650100311A67 /* CustomCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLabel.m; sourceTree = "<group>"; };
-		4CC4564210E3653000311A67 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
-		4CC4564310E3653000311A67 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
 		4CC4564810E3654100311A67 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
 		4CC4564910E3654100311A67 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
 		4CC4566710E365A200311A67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -79,6 +90,10 @@
 		4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BlogAssistant.xcdatamodel; sourceTree = "<group>"; };
 		4CC456CA10E4387200311A67 /* TestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppController.h; sourceTree = "<group>"; };
 		4CC456CB10E4387200311A67 /* TestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppController.m; sourceTree = "<group>"; };
+		4CD4FF5610F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSafariContextMenuSwizzler.h; sourceTree = "<group>"; };
+		4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSafariContextMenuSwizzler.m; sourceTree = "<group>"; };
+		4CD4FF5C10F4013E0008CFE2 /* PluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginController.h; sourceTree = "<group>"; };
+		4CD4FF5D10F4013E0008CFE2 /* PluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginController.m; sourceTree = "<group>"; };
 		4CE550E710F0BDBE00C98B98 /* CustomCellLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLinkLabel.h; sourceTree = "<group>"; };
 		4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLinkLabel.m; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -120,7 +135,6 @@
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
-				4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */,
 			);
 			name = BlogAssistant;
 			sourceTree = "<group>";
@@ -129,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
+				4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */,
 				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
 			);
 			name = Resources;
@@ -156,8 +171,12 @@
 		32DBCF9E0370C38000C91783 /* Plugin Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CD4FF5610F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.h */,
+				4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */,
 				0259C57AFE90428111CA0C5A /* BlogAssistantView.h */,
 				0259C576FE90428111CA0C5A /* BlogAssistantView.m */,
+				4CD4FF5C10F4013E0008CFE2 /* PluginController.h */,
+				4CD4FF5D10F4013E0008CFE2 /* PluginController.m */,
 			);
 			name = "Plugin Classes";
 			sourceTree = "<group>";
@@ -208,8 +227,6 @@
 		4CC4564110E3651600311A67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4CC4564210E3653000311A67 /* ImageTransformer.h */,
-				4CC4564310E3653000311A67 /* ImageTransformer.m */,
 				4CC4564810E3654100311A67 /* Resource.h */,
 				4CC4564910E3654100311A67 /* Resource.m */,
 				4CC4568710E3689F00311A67 /* ModelController.h */,
@@ -246,6 +263,8 @@
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
 				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
+				4CD4005510F44ECD0008CFE2 /* CopyFiles */,
+				4CD4007D10F69F8F0008CFE2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -296,6 +315,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CD4007D10F69F8F0008CFE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Restart Safari\"\nps -A|grep \"/Applications/Safari.app/Contents/MacOS\" | grep -v grep|awk '{print $1}' | xargs kill\nopen -a Safari\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CC455E310E2E18900311A67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -308,13 +344,12 @@
 				4CC4563510E3650100311A67 /* CustomCellButton.m in Sources */,
 				4CC4563610E3650100311A67 /* CustomCellImage.m in Sources */,
 				4CC4563710E3650100311A67 /* CustomCellLabel.m in Sources */,
-				4CC4564410E3653000311A67 /* ImageTransformer.m in Sources */,
 				4CC4564A10E3654100311A67 /* Resource.m in Sources */,
 				4CC4566E10E365CA00311A67 /* ViewerController.m in Sources */,
 				4CC4568A10E3689F00311A67 /* ModelController.m in Sources */,
 				4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
-				4CC456CD10E4387200311A67 /* TestAppController.m in Sources */,
 				4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
+				4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,13 +364,13 @@
 				4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */,
 				4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */,
 				4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */,
-				4CC4564510E3653000311A67 /* ImageTransformer.m in Sources */,
 				4CC4564B10E3654100311A67 /* Resource.m in Sources */,
 				4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */,
 				4CC4568910E3689F00311A67 /* ModelController.m in Sources */,
 				4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
-				4CC456CC10E4387200311A67 /* TestAppController.m in Sources */,
 				4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
+				4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */,
+				4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

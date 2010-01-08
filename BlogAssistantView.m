@@ -15,6 +15,15 @@
 
 @implementation BlogAssistantView
 
+static BOOL initialized_flag = NO;
+
++ (void)initialize
+{
+	if (!initialized_flag) {
+		NSLog(@"BLogAssistantView was loaded");
+	}
+}
+
 // WebPlugInViewFactory protocol
 // The principal class of the plug-in bundle must implement this protocol.
 
