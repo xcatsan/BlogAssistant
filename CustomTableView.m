@@ -2,7 +2,7 @@
 //  CustomTableView.m
 //  CustomCellWithCoredata
 //
-//  Created by 橋口 湖 on 09/12/11.
+//  Created by Hiroshi Hashiguchi on 09/12/11.
 //  Copyright 2009 xcatsan.com. All rights reserved.
 //
 

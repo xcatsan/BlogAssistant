@@ -2,7 +2,7 @@
 //  ViewerController.m
 //  BlogAssistant
 //
-//  Created by 橋口 湖 on 09/12/24.
+//  Created by Hiroshi Hashiguchi on 09/12/24.
 //  Copyright 2009 xcatsan.com. All rights reserved.
 //
 

@@ -9,5 +9,6 @@
 @implementation Resource
 
 @dynamic title, imageFilename, url;
+@synthesize image;
 
 @end

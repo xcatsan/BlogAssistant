@@ -35,6 +35,10 @@
 		4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
 		4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
 		4CD4006B10F470CE0008CFE2 /* BlogAssistant.webplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */; };
+		4CD4017B10F70BBB0008CFE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4017A10F70BBB0008CFE2 /* Localizable.strings */; };
+		4CD4017C10F70BBB0008CFE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4017A10F70BBB0008CFE2 /* Localizable.strings */; };
+		4CD4019210F70DA10008CFE2 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4019110F70DA10008CFE2 /* Utility.m */; };
+		4CD4019310F70DA10008CFE2 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4019110F70DA10008CFE2 /* Utility.m */; };
 		4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */; };
 		4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5D10F4013E0008CFE2 /* PluginController.m */; };
 		4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
@@ -90,6 +94,9 @@
 		4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BlogAssistant.xcdatamodel; sourceTree = "<group>"; };
 		4CC456CA10E4387200311A67 /* TestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppController.h; sourceTree = "<group>"; };
 		4CC456CB10E4387200311A67 /* TestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppController.m; sourceTree = "<group>"; };
+		4CD4014210F70A550008CFE2 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CD4019010F70DA10008CFE2 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		4CD4019110F70DA10008CFE2 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		4CD4FF5610F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXSafariContextMenuSwizzler.h; sourceTree = "<group>"; };
 		4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXSafariContextMenuSwizzler.m; sourceTree = "<group>"; };
 		4CD4FF5C10F4013E0008CFE2 /* PluginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginController.h; sourceTree = "<group>"; };
@@ -145,6 +152,7 @@
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 				4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */,
 				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
+				4CD4017A10F70BBB0008CFE2 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -185,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				32DBCF980370C29C00C91783 /* BlogAssistant_Prefix.pch */,
+				4CD4019010F70DA10008CFE2 /* Utility.h */,
+				4CD4019110F70DA10008CFE2 /* Utility.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -301,6 +311,7 @@
 			files = (
 				4CC455F510E2E35100311A67 /* MainMenu.xib in Resources */,
 				4CC4567510E3666800311A67 /* Viewer.xib in Resources */,
+				4CD4017C10F70BBB0008CFE2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +321,7 @@
 			files = (
 				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
 				4CC4567410E3666800311A67 /* Viewer.xib in Resources */,
+				4CD4017B10F70BBB0008CFE2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,7 @@
 				4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
 				4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
 				4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */,
+				4CD4019310F70DA10008CFE2 /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +384,21 @@
 				4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
 				4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */,
 				4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */,
+				4CD4019210F70DA10008CFE2 /* Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4CD4017A10F70BBB0008CFE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD4014210F70A550008CFE2 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

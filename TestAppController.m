@@ -2,7 +2,7 @@
 //  TestAppController.m
 //  BlogAssistant
 //
-//  Created by 橋口 湖 on 09/12/25.
+//  Created by Hiroshi Hashiguchi on 09/12/25.
 //  Copyright 2009 xcatsan.com. All rights reserved.
 //
 

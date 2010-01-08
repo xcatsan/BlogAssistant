@@ -2,7 +2,7 @@
 //  ModelController.m
 //  BlogAssistant
 //
-//  Created by 橋口 湖 on 09/12/24.
+//  Created by Hiroshi Hashiguchi on 09/12/24.
 //  Copyright 2009 xcatsan.com. All rights reserved.
 //
 #define BASE_FOLDERNAME @"BlogAssistant"
@@ -27,6 +27,21 @@
 {
 	NSString* path = [self pathToSave];
 	return [path stringByAppendingPathComponent:IMAGE_FOLDERNAME];
+}
+
+- (NSString*) stringWithUUID {
+	CFUUIDRef uuidObj = CFUUIDCreate(nil);//create a new UUID
+	//get the string representation of the UUID
+	NSString *uuidString = (NSString*)CFUUIDCreateString(nil, uuidObj);
+	CFRelease(uuidObj);
+	return [uuidString autorelease];
+}
+
+- (NSString*)createImageFilename
+{
+	NSString* filename =
+	[NSString stringWithFormat:@"%@.png", [self stringWithUUID]];
+	return filename;
 }
 
 #pragma mark -
@@ -118,11 +133,22 @@ static ModelController* _sharedController = nil;
 {
 	NSError* error = nil;
 
+
 	[[self managedObjectContext] save:&error];
-	
+
 	if (error) {
 		NSLog(@"%@", error);
 	}
 }
+
+-(Resource*)createResource
+{
+	Resource* resource =
+	(Resource*)[NSEntityDescription insertNewObjectForEntityForName:@"Resource"
+											 inManagedObjectContext:[self managedObjectContext]];
+				
+	return resource;
+}
+
 
 @end
