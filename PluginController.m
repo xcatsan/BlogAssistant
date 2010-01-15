@@ -7,7 +7,7 @@
 //
 
 #import "PluginController.h"
-#import "ModelController.h"
+#import "ModelManager.h"
 #import "SXSafariContextMenuSwizzler.h"
 #import "ViewerController.h"
 #import "Utility.h"
@@ -97,11 +97,11 @@ static PluginController* _shared_instance;
 	NSString* title = [web_view mainFrameTitle];
 	NSString* url = [web_view mainFrameURL];
 	
-	Resource* resource = [[ModelController sharedController] createResource];
+	Resource* resource = [[ModelManager sharedManager] createResource];
 	resource.url = url;
 	resource.title = title;
 	resource.image = [self thumnailImageFromView:doc_view];
-	[[ModelController sharedController] save];
+	[[ModelManager sharedManager] save];
 
 	[viewerController window];
 }

@@ -7,7 +7,7 @@
 //
 
 #import "ViewerController.h"
-#import "ModelController.h"
+#import "CoreDataManager.h"
 
 #import "CustomCell.h"
 #import "CustomCellButton.h"
@@ -33,11 +33,11 @@
 -(void)awakeFromNib
 {
 	[arrayController setManagedObjectContext:
-		[[ModelController sharedController]  managedObjectContext]];
+		[[CoreDataManager sharedManager]  managedObjectContext]];
 
 
 	CustomCell* cell = [[[CustomCell alloc] init] autorelease];
-	cell.managedObjectContext = [[ModelController sharedController] managedObjectContext];
+	cell.managedObjectContext = [[CoreDataManager sharedManager] managedObjectContext];
 	
 	CustomCellButton* cellButton;
 
@@ -62,7 +62,7 @@
 	
 	CustomCellImage* cellImage = [[[CustomCellImage alloc]
 initWithFrame:NSMakeRect(10, 10, 80, 80)] autorelease];
-	cellImage.keyPath = @"imageFilename";
+	cellImage.keyPath = @"image";
 	[cell addControl:cellImage];
 	
 	CustomCellLabel* cellLabel;

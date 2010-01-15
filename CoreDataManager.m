@@ -5,54 +5,24 @@
 //  Created by Hiroshi Hashiguchi on 09/12/24.
 //  Copyright 2009 xcatsan.com. All rights reserved.
 //
-#define BASE_FOLDERNAME @"BlogAssistant"
+#import "CoreDataManager.h"
+#import "PathManager.h"
+
 #define DB_FILENAME @"BlogAssistant.db"
-#define IMAGE_FOLDERNAME @"Images"
 
-#import "ModelController.h"
-#import "Resource.h"
 
-@implementation ModelController
+@implementation CoreDataManager
 
-#pragma mark -
-#pragma mark Utility (private)
-- (NSString*)pathToSave
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(
-		NSApplicationSupportDirectory, NSUserDomainMask, YES);
-	NSString* path = [[paths objectAtIndex:0] stringByAppendingPathComponent:BASE_FOLDERNAME];
-	return path;
-}
-- (NSString*)pathToSaveImage
-{
-	NSString* path = [self pathToSave];
-	return [path stringByAppendingPathComponent:IMAGE_FOLDERNAME];
-}
-
-- (NSString*) stringWithUUID {
-	CFUUIDRef uuidObj = CFUUIDCreate(nil);//create a new UUID
-	//get the string representation of the UUID
-	NSString *uuidString = (NSString*)CFUUIDCreateString(nil, uuidObj);
-	CFRelease(uuidObj);
-	return [uuidString autorelease];
-}
-
-- (NSString*)createImageFilename
-{
-	NSString* filename =
-	[NSString stringWithFormat:@"%@.png", [self stringWithUUID]];
-	return filename;
-}
 
 #pragma mark -
 #pragma mark Initilizer and Deallocation
-static ModelController* _sharedController = nil;
-+ (ModelController*)sharedController
+static CoreDataManager* _sharedManager = nil;
++ (CoreDataManager*)sharedManager
 {
-	if (!_sharedController) {
-		_sharedController = [[ModelController alloc] init];
+	if (!_sharedManager) {
+		_sharedManager = [[CoreDataManager alloc] init];
 	}
-	return _sharedController;
+	return _sharedManager;
 }
 
 - (void) dealloc
@@ -75,7 +45,7 @@ static ModelController* _sharedController = nil;
     NSFileManager *fm = [NSFileManager defaultManager];
     NSError *error = nil;
 
-    NSString *path = [self pathToSave];
+    NSString *path = [[PathManager sharedManager] dataPath];
 	
     if ( ![fm fileExistsAtPath:path isDirectory:NULL] ) {
         [fm createDirectoryAtPath:path attributes:nil];
@@ -125,30 +95,5 @@ static ModelController* _sharedController = nil;
     
     return managedObjectContext;	
 }
-
-#pragma mark -
-#pragma mark Data management
-
--(void)save
-{
-	NSError* error = nil;
-
-
-	[[self managedObjectContext] save:&error];
-
-	if (error) {
-		NSLog(@"%@", error);
-	}
-}
-
--(Resource*)createResource
-{
-	Resource* resource =
-	(Resource*)[NSEntityDescription insertNewObjectForEntityForName:@"Resource"
-											 inManagedObjectContext:[self managedObjectContext]];
-				
-	return resource;
-}
-
 
 @end

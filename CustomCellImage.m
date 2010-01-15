@@ -8,8 +8,6 @@
 
 #import "CustomCellImage.h" 
 
-#import "ModelController.h"
-
 #define SHADOW_OFFSET	5.0
 
 @implementation CustomCellImage
@@ -19,10 +17,7 @@
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 				state:(NSInteger)buttonState value:(id)value
 {
-	NSString* imageFilename = [value valueForKey:self.keyPath];
-	NSString* imagePath = [[ModelController sharedController] pathToSaveImage];
-	NSImage* image = [[[NSImage alloc] initWithContentsOfFile:
-					  [imagePath stringByAppendingPathComponent:imageFilename]] autorelease];
+	NSImage* image = [value valueForKey:self.keyPath];
 	
 	// #TODO: for 10.6
 	[image setFlipped:YES];

@@ -8,21 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class Resource;
-@interface ModelController : NSObject {
+@interface CoreDataManager : NSObject {
 
 	NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
 }
-+ (ModelController*)sharedController;
++ (CoreDataManager*)sharedManager;
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSManagedObjectContext *)managedObjectContext;
-
--(void)save;
-- (NSString*)pathToSaveImage;
-
--(Resource*)createResource;
 
 @end

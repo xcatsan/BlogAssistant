@@ -7,7 +7,8 @@
 //
 
 #import "TestAppController.h"
-#import "ModelController.h"
+#import "CoreDataManager.h"
+#import "ModelManager.h"
 #import "ViewerController.h"
 
 @implementation TestAppController
@@ -27,8 +28,7 @@
 -(void)awakeFromNib
 {
 	[arrayController setManagedObjectContext:
-		[[ModelController sharedController] managedObjectContext]];
-	
+		[[CoreDataManager sharedManager] managedObjectContext]];
 	viewerController = [[ViewerController alloc] init];
 	[viewerController window];
 }
@@ -45,7 +45,7 @@
 
 -(IBAction)save:(id)sender
 {
-	[[ModelController sharedController] save];
+	[[ModelManager sharedManager] save];
 }
 
 @end
