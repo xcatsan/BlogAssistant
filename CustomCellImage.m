@@ -17,6 +17,9 @@
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 				state:(NSInteger)buttonState value:(id)value
 {
+	// #TODO: DEBUG
+	return;
+
 	NSImage* image = [value valueForKey:self.keyPath];
 	
 	// #TODO: for 10.6

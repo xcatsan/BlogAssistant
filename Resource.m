@@ -1,23 +1,28 @@
+// 
+//  Resource.m
+//  BlogAssistant
 //
-//  Homepage.m
-//  CustomCell
+//  Created by 橋口 湖 on 10/01/18.
+//  Copyright 2010 xcatsan.com. All rights reserved.
 //
 
 #import "Resource.h"
 #import "CoreDataManager.h"
 #import "PathManager.h"
 
-@implementation Resource
+@implementation Resource 
 
-@dynamic title, imageFilename, url;
+@dynamic imageFilename;
+@dynamic title;
+@dynamic url;
+@synthesize image;
 
 - (NSImage*)image
 {
-	NSImage* image = nil;
-	if (imageFilename) {
+	if (!image && self.imageFilename) {
 		NSString* path = [[PathManager sharedManager] imagePath];
 		image = [[[NSImage alloc] initWithContentsOfFile:
-				  [path stringByAppendingPathComponent:imageFilename]] autorelease];
+				  [path stringByAppendingPathComponent:self.imageFilename]] autorelease];
 	}
 	return image;
 }

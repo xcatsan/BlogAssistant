@@ -39,12 +39,9 @@ static ModelManager* _sharedManager = nil;
 	NSManagedObjectContext* moc = [[CoreDataManager sharedManager] managedObjectContext];
 
 	// save image
-	/*
 	NSSet* insertedObjects = [moc insertedObjects];
 	NSString* path = [[PathManager sharedManager] imagePath];
-	 */
 
-	/*
 	for (id object in insertedObjects) {
 		if ([object isKindOfClass:[Resource class]]) {
 			Resource* resource = (Resource*)object;
@@ -58,7 +55,7 @@ static ModelManager* _sharedManager = nil;
 			
 		}
 	}
-	 */
+
 	// save data
 	[moc save:&error];
 	

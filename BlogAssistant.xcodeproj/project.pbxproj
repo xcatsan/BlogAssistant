@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224339570A6F05F3000348D4 /* WebKit.framework */; };
+		4C9E245A11042F9E00BBF548 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E245911042F9E00BBF548 /* Resource.m */; };
+		4C9E245B11042F9E00BBF548 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E245911042F9E00BBF548 /* Resource.m */; };
 		4CC455F510E2E35100311A67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC455F410E2E35100311A67 /* MainMenu.xib */; };
 		4CC455F610E2E36000311A67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC455F010E2E2D500311A67 /* main.m */; };
 		4CC4563210E3650100311A67 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562710E364FE00311A67 /* CustomCell.m */; };
@@ -22,8 +24,6 @@
 		4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
 		4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
 		4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
-		4CC4564A10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
-		4CC4564B10E3654100311A67 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4564910E3654100311A67 /* Resource.m */; };
 		4CC4566810E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
 		4CC4566910E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
 		4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4566C10E365CA00311A67 /* ViewerController.m */; };
@@ -71,6 +71,8 @@
 		0259C57AFE90428111CA0C5A /* BlogAssistantView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BlogAssistantView.h; sourceTree = "<group>"; };
 		224339570A6F05F3000348D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* BlogAssistant_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogAssistant_Prefix.pch; sourceTree = "<group>"; };
+		4C9E245811042F9E00BBF548 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		4C9E245911042F9E00BBF548 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
 		4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlogAssistant Test App.webplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogAssistant Test App-Info.plist"; sourceTree = "<group>"; };
 		4CC455F010E2E2D500311A67 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,8 +89,6 @@
 		4CC4562F10E3650000311A67 /* CustomCellImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellImage.m; sourceTree = "<group>"; };
 		4CC4563010E3650100311A67 /* CustomCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLabel.h; sourceTree = "<group>"; };
 		4CC4563110E3650100311A67 /* CustomCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLabel.m; sourceTree = "<group>"; };
-		4CC4564810E3654100311A67 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
-		4CC4564910E3654100311A67 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
 		4CC4566710E365A200311A67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		4CC4566B10E365CA00311A67 /* ViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewerController.h; sourceTree = "<group>"; };
 		4CC4566C10E365CA00311A67 /* ViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewerController.m; sourceTree = "<group>"; };
@@ -245,8 +245,8 @@
 		4CC4564110E3651600311A67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4CC4564810E3654100311A67 /* Resource.h */,
-				4CC4564910E3654100311A67 /* Resource.m */,
+				4C9E245811042F9E00BBF548 /* Resource.h */,
+				4C9E245911042F9E00BBF548 /* Resource.m */,
 				4CD4029810FD7B9D0008CFE2 /* ModelManager.h */,
 				4CD4029910FD7B9D0008CFE2 /* ModelManager.m */,
 				4CC4568710E3689F00311A67 /* CoreDataManager.h */,
@@ -368,7 +368,6 @@
 				4CC4563510E3650100311A67 /* CustomCellButton.m in Sources */,
 				4CC4563610E3650100311A67 /* CustomCellImage.m in Sources */,
 				4CC4563710E3650100311A67 /* CustomCellLabel.m in Sources */,
-				4CC4564A10E3654100311A67 /* Resource.m in Sources */,
 				4CC4566E10E365CA00311A67 /* ViewerController.m in Sources */,
 				4CC4568A10E3689F00311A67 /* CoreDataManager.m in Sources */,
 				4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
@@ -377,6 +376,7 @@
 				4CD4019310F70DA10008CFE2 /* Utility.m in Sources */,
 				4CD4029B10FD7B9D0008CFE2 /* ModelManager.m in Sources */,
 				4CD402C010FD7C810008CFE2 /* PathManager.m in Sources */,
+				4C9E245A11042F9E00BBF548 /* Resource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +391,6 @@
 				4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */,
 				4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */,
 				4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */,
-				4CC4564B10E3654100311A67 /* Resource.m in Sources */,
 				4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */,
 				4CC4568910E3689F00311A67 /* CoreDataManager.m in Sources */,
 				4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
@@ -401,6 +400,7 @@
 				4CD4019210F70DA10008CFE2 /* Utility.m in Sources */,
 				4CD4029A10FD7B9D0008CFE2 /* ModelManager.m in Sources */,
 				4CD402BF10FD7C810008CFE2 /* PathManager.m in Sources */,
+				4C9E245B11042F9E00BBF548 /* Resource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

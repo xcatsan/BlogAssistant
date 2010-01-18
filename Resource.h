@@ -1,21 +1,25 @@
 //
-//  Homepage.h
-//  CustomCell
+//  Resource.h
+//  BlogAssistant
+//
+//  Created by 橋口 湖 on 10/01/18.
+//  Copyright 2010 xcatsan.com. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <CoreData/CoreData.h>
 
 
-@interface Resource : NSManagedObject {
-
-	NSString* title;
-	NSString* imageFilename;
-	NSString* url;
+@interface Resource :  NSManagedObject  
+{
+	NSImage* image;
 }
-@property (retain, nonatomic) NSString* title;
-@property (retain, nonatomic) NSString* imageFilename;
-@property (retain, nonatomic) NSString* url;
 
--(NSImage*)image;
+@property (retain) NSString * imageFilename;
+@property (retain) NSString * title;
+@property (retain) NSString * url;
+
+@property (retain) NSImage * image;
 
 @end
+
+

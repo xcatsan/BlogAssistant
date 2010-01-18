@@ -72,16 +72,30 @@ static PluginController* _shared_instance;
 {
 	NSBitmapImageRep* bitmap =
 		[view bitmapImageRepForCachingDisplayInRect:[view bounds]];
+
 	[view cacheDisplayInRect:[view bounds] toBitmapImageRep:bitmap];
-	NSImage* image = [[[NSImage alloc] initWithData:[bitmap TIFFRepresentation]] autorelease];
+
+	NSImage* viewImage = [[NSImage alloc] initWithData:[bitmap TIFFRepresentation]];
+
+	NSRect clippedRect = NSZeroRect;
+	clippedRect.size = [viewImage size];
 	
+	if (clippedRect.size.width > clippedRect.size.height) {
+		clippedRect.size.width = clippedRect.size.height;
+	} else {
+		clippedRect.size.height = clippedRect.size.width;
+	}
+
 	NSSize thumnailSize = NSMakeSize(THUMNAIL_SIZE, THUMNAIL_SIZE);
 	NSRect thumnailRect = NSZeroRect;
 	thumnailRect.size = thumnailSize;
+
 	NSImage* thumnailImage = [[[NSImage alloc] initWithSize:thumnailSize] autorelease];
 	[thumnailImage lockFocus];
-	[image drawInRect:thumnailRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+	[viewImage drawInRect:thumnailRect fromRect:clippedRect operation:NSCompositeSourceOver fraction:1.0];
 	[thumnailImage unlockFocus];
+
+	[viewImage release];
 
 	return thumnailImage;
 }
@@ -92,7 +106,8 @@ static PluginController* _shared_instance;
 -(void)addPage:(id)sender
 {
 	WebView* web_view = [sender representedObject];
-	NSView* doc_view = [[[web_view mainFrame] frameView] documentView];
+	WebFrameView* frame_view = [[web_view mainFrame] frameView];
+	NSView* doc_view = [frame_view documentView];
 
 	NSString* title = [web_view mainFrameTitle];
 	NSString* url = [web_view mainFrameURL];
