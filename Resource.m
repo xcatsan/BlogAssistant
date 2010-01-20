@@ -21,8 +21,8 @@
 {
 	if (!image && self.imageFilename) {
 		NSString* path = [[PathManager sharedManager] imagePath];
-		image = [[[NSImage alloc] initWithContentsOfFile:
-				  [path stringByAppendingPathComponent:self.imageFilename]] autorelease];
+		image = [[NSImage alloc] initWithContentsOfFile:
+				  [path stringByAppendingPathComponent:self.imageFilename]];
 	}
 	return image;
 }

@@ -17,21 +17,35 @@
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 				state:(NSInteger)buttonState value:(id)value
 {
-	// #TODO: DEBUG
-	return;
-
 	NSImage* image = [value valueForKey:self.keyPath];
 	
 	// #TODO: for 10.6
-	[image setFlipped:YES];
+//	[image setFlipped:YES];
+	
+	NSSize viewSize = [controlView frame].size;
+
+	NSRect cellFrame2 = cellFrame;
+	cellFrame2.origin.y = viewSize.height - (cellFrame.origin.y + cellFrame.size.height);
+
 	NSRect imageFrame = self.frame;
 	imageFrame.origin.x += cellFrame.origin.x;
-	imageFrame.origin.y += cellFrame.origin.y;
+
+	imageFrame.origin.y = cellFrame2.origin.y +
+		(cellFrame.size.height - (imageFrame.origin.y + imageFrame.size.height));
+
+	[NSGraphicsContext saveGraphicsState];
+	[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
+
+	NSAffineTransform* xform = [NSAffineTransform transform];
+	[xform translateXBy:0.0 yBy:viewSize.height];
+	[xform scaleXBy:1.0 yBy:-1.0];
+	[xform concat];
 	[image drawInRect:imageFrame
 			 fromRect:NSZeroRect
 			operation:NSCompositeSourceOver
 			 fraction:1.0];
-	
+	[NSGraphicsContext restoreGraphicsState];
+
 	/*
 	imageFrame.origin.x += cellFrame.origin.x + SHADOW_OFFSET;
 	imageFrame.origin.y += cellFrame.origin.y + SHADOW_OFFSET;

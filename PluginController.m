@@ -67,7 +67,7 @@ static PluginController* _shared_instance;
 
 #pragma mark -
 #pragma mark Utility
-#define THUMNAIL_SIZE	100
+#define THUMNAIL_SIZE	200
 -(NSImage*)thumnailImageFromView:(NSView*)view
 {
 	NSBitmapImageRep* bitmap =
@@ -79,10 +79,11 @@ static PluginController* _shared_instance;
 
 	NSRect clippedRect = NSZeroRect;
 	clippedRect.size = [viewImage size];
-	
+
 	if (clippedRect.size.width > clippedRect.size.height) {
 		clippedRect.size.width = clippedRect.size.height;
 	} else {
+		clippedRect.origin.y = clippedRect.size.height - clippedRect.size.width;
 		clippedRect.size.height = clippedRect.size.width;
 	}
 
@@ -91,8 +92,14 @@ static PluginController* _shared_instance;
 	thumnailRect.size = thumnailSize;
 
 	NSImage* thumnailImage = [[[NSImage alloc] initWithSize:thumnailSize] autorelease];
+	
 	[thumnailImage lockFocus];
+	[NSGraphicsContext saveGraphicsState];
+	[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
+
 	[viewImage drawInRect:thumnailRect fromRect:clippedRect operation:NSCompositeSourceOver fraction:1.0];
+
+	[NSGraphicsContext restoreGraphicsState];
 	[thumnailImage unlockFocus];
 
 	[viewImage release];
