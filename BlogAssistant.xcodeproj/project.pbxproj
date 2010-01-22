@@ -18,17 +18,9 @@
 		4CC4563510E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
 		4CC4563610E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
 		4CC4563710E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
-		4CC4563810E3650100311A67 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562710E364FE00311A67 /* CustomCell.m */; };
-		4CC4563910E3650100311A67 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562910E364FE00311A67 /* CustomTableView.m */; };
-		4CC4563A10E3650100311A67 /* CustomCellControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562B10E364FE00311A67 /* CustomCellControl.m */; };
-		4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562D10E364FE00311A67 /* CustomCellButton.m */; };
-		4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4562F10E3650000311A67 /* CustomCellImage.m */; };
-		4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4563110E3650100311A67 /* CustomCellLabel.m */; };
 		4CC4566810E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
 		4CC4566910E365A200311A67 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4566710E365A200311A67 /* CoreData.framework */; };
-		4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4566C10E365CA00311A67 /* ViewerController.m */; };
 		4CC4566E10E365CA00311A67 /* ViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4566C10E365CA00311A67 /* ViewerController.m */; };
-		4CC4567410E3666800311A67 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4567310E3666800311A67 /* Viewer.xib */; };
 		4CC4567510E3666800311A67 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4567310E3666800311A67 /* Viewer.xib */; };
 		4CC4568910E3689F00311A67 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* CoreDataManager.m */; };
 		4CC4568A10E3689F00311A67 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* CoreDataManager.m */; };
@@ -45,8 +37,7 @@
 		4CD402C010FD7C810008CFE2 /* PathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD402BE10FD7C810008CFE2 /* PathManager.m */; };
 		4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5710F3FFC30008CFE2 /* SXSafariContextMenuSwizzler.m */; };
 		4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5D10F4013E0008CFE2 /* PluginController.m */; };
-		4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* TestAppController.m */; };
-		4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
+		4CD4FFD410F4040C0008CFE2 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* AppController.m */; };
 		4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
 		8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BlogAssistantView.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
@@ -71,10 +62,10 @@
 		0259C57AFE90428111CA0C5A /* BlogAssistantView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BlogAssistantView.h; sourceTree = "<group>"; };
 		224339570A6F05F3000348D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* BlogAssistant_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogAssistant_Prefix.pch; sourceTree = "<group>"; };
+		4C3435D8110957D6002593EF /* BlogAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9E245811042F9E00BBF548 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
 		4C9E245911042F9E00BBF548 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
-		4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlogAssistant Test App.webplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogAssistant Test App-Info.plist"; sourceTree = "<group>"; };
+		4CC455E810E2E18A00311A67 /* BlogAssistant.App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogAssistant.App-Info.plist"; sourceTree = "<group>"; };
 		4CC455F010E2E2D500311A67 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CC455F410E2E35100311A67 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		4CC4562610E364FE00311A67 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
@@ -96,8 +87,8 @@
 		4CC4568710E3689F00311A67 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		4CC4568810E3689F00311A67 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BlogAssistant.xcdatamodel; sourceTree = "<group>"; };
-		4CC456CA10E4387200311A67 /* TestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppController.h; sourceTree = "<group>"; };
-		4CC456CB10E4387200311A67 /* TestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppController.m; sourceTree = "<group>"; };
+		4CC456CA10E4387200311A67 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		4CC456CB10E4387200311A67 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		4CD4014210F70A550008CFE2 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CD4019010F70DA10008CFE2 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		4CD4019110F70DA10008CFE2 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
@@ -143,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				4CC4564110E3651600311A67 /* Models */,
-				4CC455EF10E2E2B900311A67 /* Test App Classes */,
 				4CC4562310E364D400311A67 /* Viewer */,
+				4CC455EF10E2E2B900311A67 /*  App Classes */,
 				32DBCF9E0370C38000C91783 /* Plugin Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
@@ -158,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
-				4CC455E810E2E18A00311A67 /* BlogAssistant Test App-Info.plist */,
+				4CC455E810E2E18A00311A67 /* BlogAssistant.App-Info.plist */,
 				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
 				4CD4017A10F70BBB0008CFE2 /* Localizable.strings */,
 			);
@@ -169,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */,
-				4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */,
+				4C3435D8110957D6002593EF /* BlogAssistant.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,15 +198,15 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		4CC455EF10E2E2B900311A67 /* Test App Classes */ = {
+		4CC455EF10E2E2B900311A67 /*  App Classes */ = {
 			isa = PBXGroup;
 			children = (
 				4CC455F010E2E2D500311A67 /* main.m */,
 				4CC455F410E2E35100311A67 /* MainMenu.xib */,
-				4CC456CA10E4387200311A67 /* TestAppController.h */,
-				4CC456CB10E4387200311A67 /* TestAppController.m */,
+				4CC456CA10E4387200311A67 /* AppController.h */,
+				4CC456CB10E4387200311A67 /* AppController.m */,
 			);
-			name = "Test App Classes";
+			name = " App Classes";
 			sourceTree = "<group>";
 		};
 		4CC4562310E364D400311A67 /* Viewer */ = {
@@ -261,9 +252,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CC455E510E2E18900311A67 /* BlogAssistant Test App */ = {
+		4CC455E510E2E18900311A67 /* BlogAssistant App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant Test App" */;
+			buildConfigurationList = 4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant App" */;
 			buildPhases = (
 				4CC455E210E2E18900311A67 /* Resources */,
 				4CC455E310E2E18900311A67 /* Sources */,
@@ -273,14 +264,14 @@
 			);
 			dependencies = (
 			);
-			name = "BlogAssistant Test App";
+			name = "BlogAssistant App";
 			productName = "BlogAssistant Test App";
-			productReference = 4CC455E610E2E18900311A67 /* BlogAssistant Test App.webplugin */;
+			productReference = 4C3435D8110957D6002593EF /* BlogAssistant.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8D1AC9600486D14A00FE50C9 /* BlogAssistant */ = {
+		8D1AC9600486D14A00FE50C9 /* BlogAssistant Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant" */;
+			buildConfigurationList = C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant Plugin" */;
 			buildPhases = (
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
@@ -292,7 +283,7 @@
 			);
 			dependencies = (
 			);
-			name = BlogAssistant;
+			name = "BlogAssistant Plugin";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = BlogAssistant;
 			productReference = 8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */;
@@ -310,8 +301,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1AC9600486D14A00FE50C9 /* BlogAssistant */,
-				4CC455E510E2E18900311A67 /* BlogAssistant Test App */,
+				8D1AC9600486D14A00FE50C9 /* BlogAssistant Plugin */,
+				4CC455E510E2E18900311A67 /* BlogAssistant App */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
-				4CC4567410E3666800311A67 /* Viewer.xib in Resources */,
 				4CD4017B10F70BBB0008CFE2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +362,7 @@
 				4CC4568A10E3689F00311A67 /* CoreDataManager.m in Sources */,
 				4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
 				4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
-				4CD4FFD410F4040C0008CFE2 /* TestAppController.m in Sources */,
+				4CD4FFD410F4040C0008CFE2 /* AppController.m in Sources */,
 				4CD4019310F70DA10008CFE2 /* Utility.m in Sources */,
 				4CD4029B10FD7B9D0008CFE2 /* ModelManager.m in Sources */,
 				4CD402C010FD7C810008CFE2 /* PathManager.m in Sources */,
@@ -385,16 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */,
-				4CC4563810E3650100311A67 /* CustomCell.m in Sources */,
-				4CC4563910E3650100311A67 /* CustomTableView.m in Sources */,
-				4CC4563A10E3650100311A67 /* CustomCellControl.m in Sources */,
-				4CC4563B10E3650100311A67 /* CustomCellButton.m in Sources */,
-				4CC4563C10E3650100311A67 /* CustomCellImage.m in Sources */,
-				4CC4563D10E3650100311A67 /* CustomCellLabel.m in Sources */,
-				4CC4566D10E365CA00311A67 /* ViewerController.m in Sources */,
 				4CC4568910E3689F00311A67 /* CoreDataManager.m in Sources */,
 				4CC4569D10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */,
-				4CE550E910F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */,
 				4CD4FF5810F3FFC40008CFE2 /* SXSafariContextMenuSwizzler.m in Sources */,
 				4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */,
 				4CD4019210F70DA10008CFE2 /* Utility.m in Sources */,
@@ -437,7 +419,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "BlogAssistant Test App-Info.plist";
+				INFOPLIST_FILE = "BlogAssistant.App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -446,7 +428,8 @@
 					AppKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = "BlogAssistant Test App";
+				PRODUCT_NAME = BlogAssistant;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -460,7 +443,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "BlogAssistant Test App-Info.plist";
+				INFOPLIST_FILE = "BlogAssistant.App-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -526,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant Test App" */ = {
+		4CC455EB10E2E18D00311A67 /* Build configuration list for PBXNativeTarget "BlogAssistant App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CC455E910E2E18D00311A67 /* Debug */,
@@ -535,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant" */ = {
+		C027D11908A954E7001699E2 /* Build configuration list for PBXNativeTarget "BlogAssistant Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C027D11A08A954E7001699E2 /* Debug */,

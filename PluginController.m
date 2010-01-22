@@ -9,7 +9,6 @@
 #import "PluginController.h"
 #import "ModelManager.h"
 #import "SXSafariContextMenuSwizzler.h"
-#import "ViewerController.h"
 #import "Utility.h"
 #import "Resource.h"
 #import <WebKit/WebKit.h>
@@ -52,7 +51,6 @@ static PluginController* _shared_instance;
 {
 	self = [super init];
 	if (self) {
-		viewerController = [[ViewerController alloc] init];
 	}
 	
 	return self;
@@ -60,7 +58,6 @@ static PluginController* _shared_instance;
 
 - (void) dealloc
 {
-	[viewerController release];
 	[super dealloc];
 }
 
@@ -125,7 +122,8 @@ static PluginController* _shared_instance;
 	resource.image = [self thumnailImageFromView:doc_view];
 	[[ModelManager sharedManager] save];
 
-	[viewerController window];
+	[[NSWorkspace sharedWorkspace] openFile:@"" withApplication:@"BlogAssistant.app"];
+
 }
 
 @end

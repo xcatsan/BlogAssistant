@@ -11,7 +11,6 @@
 @class ViewerController;
 @interface PluginController : NSObject {
 	
-	ViewerController* viewerController;
 }
 
 @end
