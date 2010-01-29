@@ -19,4 +19,6 @@
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSManagedObjectContext *)managedObjectContext;
 
+- (NSManagedObjectContext*)recreateContext;
+
 @end

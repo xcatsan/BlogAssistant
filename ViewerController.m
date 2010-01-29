@@ -16,6 +16,8 @@
 #import "CustomCellLinkLabel.h"
 #import "CustomTableView.h"
 
+#import "Resource.h"
+
 @implementation ViewerController
 
 #pragma mark -
@@ -32,10 +34,16 @@
 
 -(void)awakeFromNib
 {
+	// setup NSArrayController
 	[arrayController setManagedObjectContext:
 		[[CoreDataManager sharedManager]  managedObjectContext]];
+	
+	NSSortDescriptor* sort = [[[NSSortDescriptor alloc]
+							 initWithKey:@"createdDate" ascending:NO] autorelease];
+	[arrayController setSortDescriptors:[NSArray arrayWithObject:sort]];
 
 
+	// setup UI
 	CustomCell* cell = [[[CustomCell alloc] init] autorelease];
 	cell.managedObjectContext = [[CoreDataManager sharedManager] managedObjectContext];
 	
@@ -45,7 +53,7 @@
 				   initWithFrame:NSMakeRect(100,60, 0, 0)] autorelease];
 	cellButton.title = @"COPY";
 	cellButton.target = self;
-	cellButton.action = @selector(click:);
+	cellButton.action = @selector(clickCopy:);
 	[cell addControl:cellButton];
 
 	/*
@@ -90,5 +98,27 @@ initWithFrame:NSMakeRect(10, 10, 80, 80)] autorelease];
 
 
 #pragma mark -
+#pragma mark Event handler
+-(void)clickCopy:(id)sender
+{
+	Resource* resource = (Resource*)sender;
 
+	NSString* str = [NSString stringWithFormat:
+		@"<a href=\"%@\" target=\"_blank\">%@</a>",
+		resource.url, resource.title];
+	NSLog(@"copy: %@", str);
+	
+	NSPasteboard* pb = [NSPasteboard generalPasteboard];
+	NSArray* types = [NSArray arrayWithObjects:NSStringPboardType, nil];
+	[pb declareTypes:types owner:self];
+	[pb setString:str forType:NSStringPboardType];
+}
+
+#pragma mark -
+#pragma mark Pulbic method
+-(void)reload
+{
+	[arrayController setManagedObjectContext:
+	 [[CoreDataManager sharedManager]  managedObjectContext]];
+}
 @end

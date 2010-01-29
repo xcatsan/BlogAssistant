@@ -15,4 +15,5 @@
 	IBOutlet CustomTableView* tableView;
 }
 
+-(void)reload;
 @end

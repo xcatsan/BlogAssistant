@@ -31,6 +31,7 @@
 		[[CoreDataManager sharedManager] managedObjectContext]];
 	viewerController = [[ViewerController alloc] init];
 	[viewerController window];
+	
 }
 
 - (void) dealloc
@@ -48,4 +49,22 @@
 	[[ModelManager sharedManager] save];
 }
 
+-(IBAction)reset:(id)sender
+{
+	NSLog(@"reset NSManagedObjectContext");
+//	[[[CoreDataManager sharedManager] managedObjectContext] reset];
+//	[arrayController rearrangeObjects];
+	[arrayController setManagedObjectContext:
+			[[CoreDataManager sharedManager] recreateContext]];
+	[viewerController reload];
+}
+
+#pragma mark -
+#pragma mark delegate
+- (BOOL)application:(NSApplication *)theApplication
+		   openFile:(NSString *)filename
+{
+	NSLog(@"opened");
+	return YES;
+}
 @end

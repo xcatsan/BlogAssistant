@@ -122,7 +122,7 @@ static PluginController* _shared_instance;
 	resource.image = [self thumnailImageFromView:doc_view];
 	[[ModelManager sharedManager] save];
 
-	[[NSWorkspace sharedWorkspace] openFile:@"" withApplication:@"BlogAssistant.app"];
+	[[NSWorkspace sharedWorkspace] openFile:@"A" withApplication:@"BlogAssistant"];
 
 }
 

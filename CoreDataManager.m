@@ -62,9 +62,9 @@ static CoreDataManager* _sharedManager = nil;
 														options:nil
 														  error:&error]) {
 		// [[NSApplication sharedApplication] presentError:error];
-		NSLog(@"%@", error);
+		NSLog(@"error: %@", error);
 		return nil;
-    }    
+    }
 	
     return persistentStoreCoordinator;
 }
@@ -94,6 +94,15 @@ static CoreDataManager* _sharedManager = nil;
     }
     
     return managedObjectContext;	
+}
+
+- (NSManagedObjectContext*)recreateContext
+{
+	if (managedObjectContext) {
+		[managedObjectContext release];
+		managedObjectContext = nil;
+	}
+	return [self managedObjectContext];
 }
 
 @end

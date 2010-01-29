@@ -135,7 +135,7 @@
 			children = (
 				4CC4564110E3651600311A67 /* Models */,
 				4CC4562310E364D400311A67 /* Viewer */,
-				4CC455EF10E2E2B900311A67 /*  App Classes */,
+				4CC455EF10E2E2B900311A67 /* App Classes */,
 				32DBCF9E0370C38000C91783 /* Plugin Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
@@ -198,7 +198,7 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		4CC455EF10E2E2B900311A67 /*  App Classes */ = {
+		4CC455EF10E2E2B900311A67 /* App Classes */ = {
 			isa = PBXGroup;
 			children = (
 				4CC455F010E2E2D500311A67 /* main.m */,
@@ -206,7 +206,7 @@
 				4CC456CA10E4387200311A67 /* AppController.h */,
 				4CC456CB10E4387200311A67 /* AppController.m */,
 			);
-			name = " App Classes";
+			name = "App Classes";
 			sourceTree = "<group>";
 		};
 		4CC4562310E364D400311A67 /* Viewer */ = {

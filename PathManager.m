@@ -25,6 +25,12 @@ static PathManager* _sharedManager = nil;
 			NSApplicationSupportDirectory, NSUserDomainMask, YES);
 		_sharedManager.dataPath =
 			[[paths objectAtIndex:0] stringByAppendingPathComponent:BASE_FOLDERNAME];
+		
+		NSString* imagePath = [_sharedManager imagePath];
+		NSFileManager* fm = [NSFileManager defaultManager];
+		if (![fm fileExistsAtPath:imagePath]) {
+			[fm createDirectoryAtPath:imagePath attributes:nil];
+		}
 	}
 	return _sharedManager;
 }

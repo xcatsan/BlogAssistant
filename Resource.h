@@ -17,6 +17,7 @@
 @property (retain) NSString * imageFilename;
 @property (retain) NSString * title;
 @property (retain) NSString * url;
+@property (retain) NSDate * createdDate;
 
 @property (retain) NSImage * image;
 

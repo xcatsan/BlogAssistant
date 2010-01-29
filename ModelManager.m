@@ -60,7 +60,7 @@ static ModelManager* _sharedManager = nil;
 	[moc save:&error];
 	
 	if (error) {
-		NSLog(@"%@", error);
+		NSLog(@"save error: %@", error);
 		// #TODO: rollback ?
 	}
 }

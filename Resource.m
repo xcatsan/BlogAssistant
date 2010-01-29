@@ -15,6 +15,7 @@
 @dynamic imageFilename;
 @dynamic title;
 @dynamic url;
+@dynamic createdDate;
 @synthesize image;
 
 - (NSImage*)image
@@ -27,4 +28,10 @@
 	return image;
 }
 
+#pragma mark -
+#pragma mark Delegation
+- (void) awakeFromInsert {
+    [super awakeFromInsert];
+	[self setPrimitiveValue:[NSDate date] forKey:@"createdDate"];
+}
 @end
