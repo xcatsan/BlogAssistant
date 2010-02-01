@@ -12,10 +12,12 @@
 
 @implementation Resource 
 
+@dynamic createdDate;
 @dynamic imageFilename;
 @dynamic title;
 @dynamic url;
-@dynamic createdDate;
+@dynamic uuid;
+
 @synthesize image;
 
 - (NSImage*)image

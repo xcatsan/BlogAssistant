@@ -17,5 +17,6 @@
 
 -(IBAction)save:(id)sender;
 -(IBAction)reset:(id)sender;
+-(IBAction)test1:(id)sender;
 
 @end

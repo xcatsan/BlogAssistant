@@ -50,20 +50,5 @@ static PathManager* _sharedManager = nil;
 	return [dataPath stringByAppendingPathComponent:IMAGE_FOLDERNAME];
 }
 
-- (NSString*) stringWithUUID {
-	CFUUIDRef uuidObj = CFUUIDCreate(nil);//create a new UUID
-	//get the string representation of the UUID
-	NSString *uuidString = (NSString*)CFUUIDCreateString(nil, uuidObj);
-	CFRelease(uuidObj);
-	return [uuidString autorelease];
-}
-
-- (NSString*)newImageFilename
-{
-	NSString* filename =
-	[NSString stringWithFormat:@"%@.png", [self stringWithUUID]];
-	return filename;
-}
-
 
 @end

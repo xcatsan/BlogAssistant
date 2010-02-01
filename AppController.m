@@ -11,6 +11,7 @@
 #import "ModelManager.h"
 #import "ViewerController.h"
 
+#import "ResourceExchange.h"
 @implementation AppController
 
 #pragma mark -
@@ -67,4 +68,13 @@
 	NSLog(@"opened");
 	return YES;
 }
+
+#pragma mark -
+#pragma mark test functions
+-(IBAction)test1:(id)sender
+{
+	ResourceExchange* ex = [[[ResourceExchange alloc] init] autorelease];
+	
+}
+
 @end

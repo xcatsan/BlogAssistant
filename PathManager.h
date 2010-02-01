@@ -17,7 +17,4 @@
 
 + (PathManager*)sharedManager;
 
-- (NSString*)imagePath;
-- (NSString*)newImageFilename;
-
 @end

@@ -7,11 +7,10 @@
 //
 
 #import "PluginController.h"
-#import "ModelManager.h"
 #import "SXSafariContextMenuSwizzler.h"
 #import "Utility.h"
-#import "Resource.h"
 #import <WebKit/WebKit.h>
+#import "ResourceExchange.h"
 
 @implementation PluginController
 
@@ -113,16 +112,32 @@ static PluginController* _shared_instance;
 	WebFrameView* frame_view = [[web_view mainFrame] frameView];
 	NSView* doc_view = [frame_view documentView];
 
-	NSString* title = [web_view mainFrameTitle];
-	NSString* url = [web_view mainFrameURL];
+	// setup output data
+	ResourceExchange* resourceEx = [[[ResourceExchange alloc] init] release];
+	resourceEx.title = [web_view mainFrameTitle];
+	resourceEx.url = [web_view mainFrameURL];
+
+	// save image file
+	NSBitmapImageRep* bitmap = [[NSBitmapImageRep alloc]
+								initWithData:[[resource image] TIFFRepresentation]];
+	NSData* data = [bitmap representationUsingType:NSPNGFileType
+										properties:[NSDictionary dictionary]];
+	[data writeToFile:[path stringByAppendingPathComponent:resourceEx.imageFilename]
+		   atomically:YES];
+	[bitmap release];
+
+	// save data
+	[resourceEx save];
 	
+	/*
 	Resource* resource = [[ModelManager sharedManager] createResource];
 	resource.url = url;
 	resource.title = title;
 	resource.image = [self thumnailImageFromView:doc_view];
 	[[ModelManager sharedManager] save];
+	 */
 
-	[[NSWorkspace sharedWorkspace] openFile:@"A" withApplication:@"BlogAssistant"];
+//	[[NSWorkspace sharedWorkspace] openFile:@"A" withApplication:@"BlogAssistant"];
 
 }
 
