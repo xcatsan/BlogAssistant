@@ -22,8 +22,8 @@
 		4CC4567510E3666800311A67 /* Viewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4567310E3666800311A67 /* Viewer.xib */; };
 		4CC4568A10E3689F00311A67 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4568810E3689F00311A67 /* CoreDataManager.m */; };
 		4CC4569E10E4319600311A67 /* BlogAssistant.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */; };
-		4CC52E6F111687120017AC6B /* ResourceExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC52E6E111687120017AC6B /* ResourceExchange.m */; };
-		4CC52E70111687120017AC6B /* ResourceExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC52E6E111687120017AC6B /* ResourceExchange.m */; };
+		4CC52E6F111687120017AC6B /* ResourceTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC52E6E111687120017AC6B /* ResourceTransfer.m */; };
+		4CC52E70111687120017AC6B /* ResourceTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC52E6E111687120017AC6B /* ResourceTransfer.m */; };
 		4CD4006B10F470CE0008CFE2 /* BlogAssistant.webplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */; };
 		4CD4017B10F70BBB0008CFE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4017A10F70BBB0008CFE2 /* Localizable.strings */; };
 		4CD4017C10F70BBB0008CFE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4017A10F70BBB0008CFE2 /* Localizable.strings */; };
@@ -36,6 +36,8 @@
 		4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4FF5D10F4013E0008CFE2 /* PluginController.m */; };
 		4CD4FFD410F4040C0008CFE2 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC456CB10E4387200311A67 /* AppController.m */; };
 		4CE550EA10F0BDBE00C98B98 /* CustomCellLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */; };
+		4CF7A1201117F589004775E7 /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7A11F1117F589004775E7 /* ImageManager.m */; };
+		4CF7A1211117F589004775E7 /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF7A11F1117F589004775E7 /* ImageManager.m */; };
 		8D1AC96B0486D14A00FE50C9 /* BlogAssistantView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BlogAssistantView.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
@@ -86,8 +88,8 @@
 		4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = BlogAssistant.xcdatamodel; sourceTree = "<group>"; };
 		4CC456CA10E4387200311A67 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		4CC456CB10E4387200311A67 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		4CC52E6D111687120017AC6B /* ResourceExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceExchange.h; sourceTree = "<group>"; };
-		4CC52E6E111687120017AC6B /* ResourceExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceExchange.m; sourceTree = "<group>"; };
+		4CC52E6D111687120017AC6B /* ResourceTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTransfer.h; sourceTree = "<group>"; };
+		4CC52E6E111687120017AC6B /* ResourceTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceTransfer.m; sourceTree = "<group>"; };
 		4CD4014210F70A550008CFE2 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CD4019010F70DA10008CFE2 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		4CD4019110F70DA10008CFE2 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
@@ -101,6 +103,8 @@
 		4CD4FF5D10F4013E0008CFE2 /* PluginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginController.m; sourceTree = "<group>"; };
 		4CE550E710F0BDBE00C98B98 /* CustomCellLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellLinkLabel.h; sourceTree = "<group>"; };
 		4CE550E810F0BDBE00C98B98 /* CustomCellLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellLinkLabel.m; sourceTree = "<group>"; };
+		4CF7A11E1117F589004775E7 /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		4CF7A11F1117F589004775E7 /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* BlogAssistant.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogAssistant.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -236,8 +240,8 @@
 			children = (
 				4C9E245811042F9E00BBF548 /* Resource.h */,
 				4C9E245911042F9E00BBF548 /* Resource.m */,
-				4CC52E6D111687120017AC6B /* ResourceExchange.h */,
-				4CC52E6E111687120017AC6B /* ResourceExchange.m */,
+				4CC52E6D111687120017AC6B /* ResourceTransfer.h */,
+				4CC52E6E111687120017AC6B /* ResourceTransfer.m */,
 				4CD4029810FD7B9D0008CFE2 /* ModelManager.h */,
 				4CD4029910FD7B9D0008CFE2 /* ModelManager.m */,
 				4CC4568710E3689F00311A67 /* CoreDataManager.h */,
@@ -245,6 +249,8 @@
 				4CC4569C10E4319600311A67 /* BlogAssistant.xcdatamodel */,
 				4CD402BD10FD7C810008CFE2 /* PathManager.h */,
 				4CD402BE10FD7C810008CFE2 /* PathManager.m */,
+				4CF7A11E1117F589004775E7 /* ImageManager.h */,
+				4CF7A11F1117F589004775E7 /* ImageManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,7 +373,8 @@
 				4CD4029B10FD7B9D0008CFE2 /* ModelManager.m in Sources */,
 				4CD402C010FD7C810008CFE2 /* PathManager.m in Sources */,
 				4C9E245A11042F9E00BBF548 /* Resource.m in Sources */,
-				4CC52E70111687120017AC6B /* ResourceExchange.m in Sources */,
+				4CC52E70111687120017AC6B /* ResourceTransfer.m in Sources */,
+				4CF7A1211117F589004775E7 /* ImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +387,8 @@
 				4CD4FF5E10F4013E0008CFE2 /* PluginController.m in Sources */,
 				4CD4019210F70DA10008CFE2 /* Utility.m in Sources */,
 				4CD402BF10FD7C810008CFE2 /* PathManager.m in Sources */,
-				4CC52E6F111687120017AC6B /* ResourceExchange.m in Sources */,
+				4CC52E6F111687120017AC6B /* ResourceTransfer.m in Sources */,
+				4CF7A1201117F589004775E7 /* ImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

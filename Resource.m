@@ -8,7 +8,7 @@
 
 #import "Resource.h"
 #import "CoreDataManager.h"
-#import "PathManager.h"
+#import "ImageManager.h"
 
 @implementation Resource 
 
@@ -23,9 +23,8 @@
 - (NSImage*)image
 {
 	if (!image && self.imageFilename) {
-		NSString* path = [[PathManager sharedManager] imagePath];
-		image = [[NSImage alloc] initWithContentsOfFile:
-				  [path stringByAppendingPathComponent:self.imageFilename]];
+		self.image = [[ImageManager sharedManager]
+					  readImageWithFilename:self.imageFilename];
 	}
 	return image;
 }

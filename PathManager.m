@@ -9,6 +9,8 @@
 #import "PathManager.h"
 
 #define BASE_FOLDERNAME @"BlogAssistant"
+#define IMAGE_FOLDERNAME @"Images"
+#define QUEUE_FOLDERNAME @"Queue"
 
 @implementation PathManager
 
@@ -25,11 +27,21 @@ static PathManager* _sharedManager = nil;
 			NSApplicationSupportDirectory, NSUserDomainMask, YES);
 		_sharedManager.dataPath =
 			[[paths objectAtIndex:0] stringByAppendingPathComponent:BASE_FOLDERNAME];
-		
-		NSString* imagePath = [_sharedManager imagePath];
+
 		NSFileManager* fm = [NSFileManager defaultManager];
+
+		NSString* dataPath = [_sharedManager dataPath];
+		if (![fm fileExistsAtPath:dataPath]) {
+			[fm createDirectoryAtPath:dataPath attributes:nil];
+		}
+
+		NSString* imagePath = [_sharedManager imagePath];
 		if (![fm fileExistsAtPath:imagePath]) {
 			[fm createDirectoryAtPath:imagePath attributes:nil];
+		}
+		NSString* queuePath = [_sharedManager queuePath];
+		if (![fm fileExistsAtPath:queuePath]) {
+			[fm createDirectoryAtPath:queuePath attributes:nil];
 		}
 	}
 	return _sharedManager;
@@ -42,13 +54,17 @@ static PathManager* _sharedManager = nil;
 }
 
 #pragma mark -
-#pragma mark Path/Filename Utility (private)
-
-#define IMAGE_FOLDERNAME @"Images"
+#pragma mark Path/Filename Utility
 - (NSString*)imagePath
 {
 	return [dataPath stringByAppendingPathComponent:IMAGE_FOLDERNAME];
 }
+
+- (NSString*)queuePath
+{
+	return [dataPath stringByAppendingPathComponent:QUEUE_FOLDERNAME];
+}
+
 
 
 @end

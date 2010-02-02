@@ -17,4 +17,7 @@
 
 + (PathManager*)sharedManager;
 
+- (NSString*)imagePath;
+- (NSString*)queuePath;
+
 @end
