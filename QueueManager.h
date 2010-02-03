@@ -8,12 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class ResourceTransfer;
 
 @interface QueueManager : NSObject {
 
+	FSEventStreamRef fseventStream;
 }
 + (QueueManager*)sharedManager;
 
-- (void)loadFiles;
-
+- (NSUInteger)loadFiles;
+- (void)startObservingQueue;
 @end

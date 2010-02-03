@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224339570A6F05F3000348D4 /* WebKit.framework */; };
-		4C5E7F531118D76900D0F7FE /* QueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E7F521118D76900D0F7FE /* QueueManager.m */; };
 		4C5E7F541118D76900D0F7FE /* QueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E7F521118D76900D0F7FE /* QueueManager.m */; };
 		4C9E245A11042F9E00BBF548 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E245911042F9E00BBF548 /* Resource.m */; };
 		4CC455F510E2E35100311A67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC455F410E2E35100311A67 /* MainMenu.xib */; };
@@ -396,7 +395,6 @@
 				4CD402BF10FD7C810008CFE2 /* PathManager.m in Sources */,
 				4CC52E6F111687120017AC6B /* ResourceTransfer.m in Sources */,
 				4CF7A1201117F589004775E7 /* ImageManager.m in Sources */,
-				4C5E7F531118D76900D0F7FE /* QueueManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,9 @@
 	viewerController = [[ViewerController alloc] init];
 	[viewerController window];
 	
+	[[QueueManager sharedManager] loadFiles];
+	[[QueueManager sharedManager] startObservingQueue];
+	
 }
 
 - (void) dealloc

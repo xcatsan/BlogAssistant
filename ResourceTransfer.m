@@ -18,23 +18,12 @@
 @synthesize uuid;
 
 #pragma mark -
-#pragma mark UUID @private
-- (NSString*) stringWithUUID {
-	CFUUIDRef uuidObj = CFUUIDCreate(nil);//create a new UUID
-	//get the string representation of the UUID
-	NSString *uuidString = (NSString*)CFUUIDCreateString(nil, uuidObj);
-	CFRelease(uuidObj);
-	return [uuidString autorelease];
-}
-
-
-#pragma mark -
 #pragma mark Initialization and deallocation
 - (id)init
 {
 	self = [super init];
 	if (self) {
-		self.uuid = [self stringWithUUID];
+		self.uuid = [Utility stringWithUUID];
 		self.imageFilename = [NSString stringWithFormat:@"%@.png", uuid];
 		self.createdDate = [NSDate date];
 	}
@@ -45,8 +34,7 @@
 {
 	self = [super init];
 	if (self) {
-		NSString* path = [[[PathManager sharedManager] queuePath] stringByAppendingPathComponent:filename];
-		NSDictionary* inputDict = [NSDictionary dictionaryWithContentsOfFile:path];
+		NSDictionary* inputDict = [NSDictionary dictionaryWithContentsOfFile:filename];
 		if (inputDict) {
 			for (NSString* key in [inputDict allKeys]) {
 				[self setValue:[inputDict valueForKey:key] forKey:key];
@@ -72,9 +60,7 @@
 	[super dealloc];
 }
 
-#pragma mark -
-#pragma mark Public operation methods
--(BOOL)save
+- (BOOL)save
 {
 	NSMutableDictionary* outputDict = [NSMutableDictionary dictionary];
 	NSArray* propertyNames = [Utility getPropertyNamesOf:self];
@@ -82,11 +68,10 @@
 		[outputDict setObject:[self valueForKey:propertyName]
 					   forKey:propertyName];
 	}
-
+	
 	NSString* filename = [self.uuid stringByAppendingPathExtension:@"plist"];
 	NSString* path = [[[PathManager sharedManager] queuePath] stringByAppendingPathComponent:filename];
 	return [outputDict writeToFile:path atomically:YES];
 }
-
 
 @end
