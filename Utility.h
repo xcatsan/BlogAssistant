@@ -14,5 +14,6 @@
 }
 
 + (NSString*)localizedStringForKey:(NSString*)key;
++ (NSArray*)getPropertyNamesOf:(id)object;
 
 @end

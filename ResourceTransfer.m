@@ -5,10 +5,9 @@
 //  Created by Hiroshi Hashiguchi on 10/02/01.
 //  Copyright 2010 xcatsan.com. All rights reserved.
 //
-#import <objc/runtime.h>
-
 #import "ResourceTransfer.h"
 #import "PathManager.h"
+#import "Utility.h"
 
 @implementation ResourceTransfer
 
@@ -42,6 +41,26 @@
 	return self;
 }
 
+- (id)initWithContentsOfFile:(NSString*)filename
+{
+	self = [super init];
+	if (self) {
+		NSString* path = [[[PathManager sharedManager] queuePath] stringByAppendingPathComponent:filename];
+		NSDictionary* inputDict = [NSDictionary dictionaryWithContentsOfFile:path];
+		if (inputDict) {
+			for (NSString* key in [inputDict allKeys]) {
+				[self setValue:[inputDict valueForKey:key] forKey:key];
+			}
+		}
+	}
+	return self;
+}
+
++ (ResourceTransfer*)resourceTransferWithContentsOfFile:(NSString*)filename
+{
+	return [[[ResourceTransfer alloc] initWithContentsOfFile:filename] autorelease];
+}
+
 - (void) dealloc
 {
 	self.createdDate = nil;
@@ -53,24 +72,16 @@
 	[super dealloc];
 }
 
-
 #pragma mark -
 #pragma mark Public operation methods
 -(BOOL)save
 {
 	NSMutableDictionary* outputDict = [NSMutableDictionary dictionary];
-	unsigned int outCount, i;
-	objc_property_t *properties =
-		class_copyPropertyList([self class], &outCount);
-	
-	for(i = 0; i < outCount; i++) {
-		objc_property_t property = properties[i];
-		NSString *propertyName =
-			[NSString stringWithUTF8String:property_getName(property)];
+	NSArray* propertyNames = [Utility getPropertyNamesOf:self];
+	for (NSString* propertyName in propertyNames) {
 		[outputDict setObject:[self valueForKey:propertyName]
 					   forKey:propertyName];
 	}
-	free(properties);
 
 	NSString* filename = [self.uuid stringByAppendingPathExtension:@"plist"];
 	NSString* path = [[[PathManager sharedManager] queuePath] stringByAppendingPathComponent:filename];

@@ -9,12 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 @class Resource;
+@class ResourceTransfer;
 @interface ModelManager : NSObject {
 
 }
 + (ModelManager*)sharedManager;
 
 -(void)save;
--(Resource*)createResource;
+-(BOOL)insertResourceWithTransfer:(ResourceTransfer*)resTran;
 
 @end

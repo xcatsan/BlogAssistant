@@ -10,6 +10,7 @@
 #import "CoreDataManager.h"
 #import "ModelManager.h"
 #import "ViewerController.h"
+#import "QueueManager.h"
 
 #import "ResourceTransfer.h"
 @implementation AppController
@@ -71,10 +72,10 @@
 
 #pragma mark -
 #pragma mark test functions
--(IBAction)test1:(id)sender
+-(IBAction)loadFiles:(id)sender
 {
-	ResourceTransfer* ex = [[[ResourceTransfer alloc] init] autorelease];
-	
+	QueueManager* qm = [QueueManager sharedManager];
+	[qm loadFiles];
 }
 
 @end

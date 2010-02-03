@@ -17,6 +17,6 @@
 
 -(IBAction)save:(id)sender;
 -(IBAction)reset:(id)sender;
--(IBAction)test1:(id)sender;
+-(IBAction)loadFiles:(id)sender;
 
 @end

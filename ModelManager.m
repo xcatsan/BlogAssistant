@@ -10,6 +10,8 @@
 #import "CoreDataManager.h"
 #import "PathManager.h"
 #import "Resource.h"
+#import "ResourceTransfer.h"
+#import "Utility.h"
 
 @implementation ModelManager
 
@@ -65,19 +67,31 @@ static ModelManager* _sharedManager = nil;
 	}
 }
 
+
 #pragma mark -
 #pragma mark Resource management
-
--(Resource*)createResource
+-(BOOL)insertResourceWithTransfer:(ResourceTransfer*)resTran
 {
 	NSManagedObjectContext* moc = [[CoreDataManager sharedManager] managedObjectContext];
 
 	Resource* resource =
 	(Resource*)[NSEntityDescription insertNewObjectForEntityForName:@"Resource"
 											 inManagedObjectContext:moc];
+
+	NSArray* keys = [Utility getPropertyNamesOf:resTran];
+	for (NSString* key in keys) {
+		[resource setValue:[resTran valueForKey:key] forKey:key];
+	}
+	NSError* error = nil;
 	
-	resource.imageFilename = [[PathManager sharedManager] newImageFilename];
-	return resource;
+	[moc save:&error];
+	
+	if (error) {
+		NSLog(@"ERROR(insertResourceWithTransfer:): %@", error);
+		return NO;
+	}
+	
+	return YES;
 }
 
 @end

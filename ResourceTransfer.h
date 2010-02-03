@@ -23,7 +23,8 @@
 @property (retain) NSString * url;
 @property (retain) NSString * uuid;
 
--(BOOL)save;
-
+- (BOOL)save;
+- (id)initWithContentsOfFile:(NSString*)filename;
++ (ResourceTransfer*)resourceTransferWithContentsOfFile:(NSString*)filename;
 
 @end
